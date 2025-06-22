@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asistente de Salud con IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Asistente Virtual de Salud 🧠</h1>
+
+  <label for="region">Región:</label>
+  <select id="region">
+    <option value="Lima">Lima</option>
+    <option value="Cusco">Cusco</option>
+    <option value="Loreto">Loreto</option>
+  </select>
+
+  <label for="especialidad">Especialidad:</label>
+  <input type="text" id="especialidad" placeholder="Ej. pediatría, cirugía..." />
+
+  <textarea id="entrada" placeholder="Haz tu pregunta sobre salud..."></textarea>
+  <button onclick="consultarIA()">Enviar a la IA</button>
+
+  <div id="respuesta"></div>
+
+  <script src="ia.js"></script>
+</body>
+</html>
